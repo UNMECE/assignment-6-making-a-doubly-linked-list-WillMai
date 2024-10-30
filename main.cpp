@@ -1,7 +1,9 @@
 #include <iostream>
+#include <cmath>
 #include <cstdlib>
-#include <ctime>
+#include <limits>
 #include "coordinate.h"
+#include <ctime>
 
 // Function prototypes
 void add_coordinate(Coordinate *list_end, float x, float y);
@@ -23,7 +25,7 @@ int main(int argc, char *argv[]) {
         return 1;
     }
 
-    std::srand(std::time(nullptr)); // Seed random number generator
+    std::srand(std::time(NULL)); // Seed random number generator
 
     // Initialize the list
     Coordinate *list_beginning = nullptr;
